@@ -1,0 +1,30 @@
+{% load static %}
+<html>
+    <head>
+        {% block title %}
+        <title>mdbootstrap</title>
+
+        {% endblock %}
+        <link rel="stylesheet" href="{% static 'css/bootstrap.css' %}">
+        <link rel="stylesheet" href="{% static 'css/mdb.css' %}">
+
+    </head>
+<body>
+    {% block body_block %}
+    <h1 class="btn btn-dark">This is the mdb file </h1><br>
+
+    <img src="{% static 'images/dhoni1.jpeg' %}" alt="image file">
+
+    
+    {% endblock %}
+
+
+
+    <script src="{% static 'js/bootstrap.js' %}"></script>
+    <script src="{% static 'js/mdb.js' %}"></script>
+    <script src="{% static 'js/jquery.js' %}"></script>
+    <script src="{% static 'js/popper.js' %}"></script>
+
+
+</body>
+</html>

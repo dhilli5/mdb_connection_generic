@@ -1,0 +1,18 @@
+{% extends 'mdbootstrap.html' %}
+{% load static %}
+
+{% block title %}
+
+    <title>child page</title>
+{% endblock %}
+
+{% block body_block %}
+
+    <h1 class="btn btn-dark">This is the child webpage</h1>
+
+    <h2 class="btn btn-success">This is the second heading for the child</h2>
+
+    <img src="{% static 'images/sachin1.jpeg' %}">
+
+
+{% endblock %}
